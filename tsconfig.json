@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2017",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "jsx": "react",
+    "strictNullChecks": true,
+    "lib": ["es2017", "dom", "esnext"]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true,
+    "useBabel": true,
+    "babelOptions": {
+      "babelrc": false,
+      "presets": [["@babel/preset-env", {
+        "targets": {
+          "node": "10"
+        }
+      }], "@babel/preset-react"]
+    },
+    "babelCore": "@babel/core"
+  }
+}
