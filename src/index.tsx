@@ -1,5 +1,4 @@
 import * as React from "react";
-import "@emotion/core";
 import {render} from "react-dom";
 import Textfield from "@atlaskit/textfield";
 
